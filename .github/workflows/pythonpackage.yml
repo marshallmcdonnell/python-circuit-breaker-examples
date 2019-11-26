@@ -34,4 +34,4 @@ jobs:
         pipenv run ls
         pipenv run python -c "import circuitbreaker_flask_example"
         pipenv install pytest
-        pipenv run pytest
+        pipenv run pytest tests/
