@@ -1,6 +1,6 @@
 import pytest
 
-from circuitbreaker_flask_example.flask_app import app
+from circuitbreaker_flask_example.flask_service import app
 
 def test_index():
     tester = app.test_client()
