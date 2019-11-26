@@ -11,6 +11,7 @@ flake8 = "*"
 flask = "*"
 circuitbreaker = "*"
 ipython = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"
