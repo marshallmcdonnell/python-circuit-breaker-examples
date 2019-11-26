@@ -1,4 +1,4 @@
-name: Python package
+name: circuitbreaker-flask-example
 
 on: [push]
 
