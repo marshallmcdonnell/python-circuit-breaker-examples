@@ -1,6 +1,6 @@
 import pytest
 
-from app import app
+from circuitbreaker_flask_example.flask_app import app
 
 
 def test_greetings():
