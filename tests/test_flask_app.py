@@ -2,6 +2,12 @@ import pytest
 
 from circuitbreaker_flask_example.flask_app import app
 
+def test_index():
+    tester = app.test_client()
+    response = tester.get('/', content_type='html/text')
+    assert response.status_code == 200
+    assert response.data == b'Welcome to the Flask App!'
+    
 
 def test_greetings():
     tester = app.test_client()
