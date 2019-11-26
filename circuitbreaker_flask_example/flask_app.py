@@ -8,6 +8,9 @@ def shutdown_server():
         raise RuntimeError('Not running with the Werkzeug Server')
     func()
 
+@app.route('/')
+def welcome():
+    return 'Welcome to the Flask App!'
 
 @app.route('/greetings')
 def hello():
