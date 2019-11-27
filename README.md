@@ -33,5 +33,5 @@ Requirements
 Authors
 -------
 
-`circuitbreaker-flask-example` was written by `Marshall McDonnell <mcdonnellmt@ornl.gov>`_.
+`circuitbreaker-flask-example` was written by [Marshall McDonnell](https://github.com/marshallmcdonnell)
 
