@@ -1,3 +1,7 @@
+| CI |
+|----|
+| [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fmarshallmcdonnell%2Fcircuitbreaker-flask-example%2Fbadge%3Fref%3Dmaster&style=flat)](https://actions-badge.atrox.dev/marshallmcdonnell/circuitbreaker-flask-example/goto?ref=master) |
+
 circuitbreaker-flask-example
 ==========
 
