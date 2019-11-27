@@ -3,6 +3,7 @@ import requests
 from circuitbreaker_flask_example.mock_server import app
 
 def get_greeting(url, port):
+    ''' Get the main index page response '''
     response = requests.get("http://{}:{}/".format(url, port))
     return response.text
 

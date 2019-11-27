@@ -5,5 +5,6 @@ app = HttpServerMock(__name__)
 
 @app.route("/", methods=["GET"])
 def index():
+    ''' Main index page endpoint '''
     return "Hello world!"
 
