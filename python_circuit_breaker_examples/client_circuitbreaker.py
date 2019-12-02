@@ -4,7 +4,10 @@ from circuitbreaker import circuit, CircuitBreakerMonitor
 
 from python_circuit_breaker_examples import mock_server
 
-@circuit(failure_threshold=3, recovery_timeout=6)
+FAILURES=3
+TIMEOUT=6
+
+@circuit(failure_threshold=FAILURES, recovery_timeout=TIMEOUT)
 def get_greeting(url, port):
     ''' Get the main index page response '''
     response = requests.get("http://{}:{}/".format(url, port))

@@ -5,8 +5,10 @@ import pybreaker
 
 from python_circuit_breaker_examples import mock_server
 
+FAILURES = 3
 TIMEOUT = 6
-circuit = pybreaker.CircuitBreaker(fail_max=3, reset_timeout=TIMEOUT, name="get_greeting")
+
+circuit = pybreaker.CircuitBreaker(fail_max=FAILURES, reset_timeout=TIMEOUT, name="get_greeting")
 @circuit
 def get_greeting(url, port):
     ''' Get the main index page response '''
