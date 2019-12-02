@@ -9,9 +9,9 @@ Working examples of using different Python Circuit Breaker packages, with a Flas
 The main purpose is to show how a Cicuit Breaker pattern will work
 using these packages:
 
- * [circuitbreaker](https://github.com/fabfuel/circuitbreaker) package
- * [pybreaker](https://github.com/danielfm/pybreaker) package
- * [python-circuit](https://github.com/edgeware/python-circuit) package
+ * [circuitbreaker](https://github.com/fabfuel/circuitbreaker)
+ * [pybreaker](https://github.com/danielfm/pybreaker)
+ * [python-circuit](https://github.com/edgeware/python-circuit)
  
 
 The client codes calls against a "REST" API service on an "unreliable" mock server.
