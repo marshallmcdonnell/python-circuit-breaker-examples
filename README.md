@@ -143,16 +143,16 @@ pipenv run python python_circuit_breaker_examples/client_python_circuit.py
 Server is turned OFF...
 get-greeting circuit state: closed. Time till open: 6
 get-greeting circuit state: closed. Time till open: 6
-get-greeting circuit state: closed. Time till open: 6
-got error ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feeb61e2ba8>: Failed to establish a new connection: [Errno 111] Connection refused',))",),) - opening circuit
-get-greeting circuit state: open. Time till open: 5.999973773956299
-get-greeting circuit state: open. Time till open: 4.9991679191589355
-get-greeting circuit state: open. Time till open: 3.9977126121520996
-get-greeting circuit state: open. Time till open: 2.996295213699341
-get-greeting circuit state: open. Time till open: 1.9949853420257568
-get-greeting circuit state: open. Time till open: 0.9937677383422852
-got error ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feeb61f3278>: Failed to establish a new connection: [Errno 111] Connection refused',))",),) - opening circuit
-get-greeting circuit state: open. Time till open: 5.999966859817505
+got error ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f47d864d518>: Failed to establish a new connection: [Errno 111] Connection refused',))",),) - opening circuit
+get-greeting circuit state: open. Time till open: 5.999971866607666
+get-greeting circuit state: open. Time till open: 4.99871563911438
+get-greeting circuit state: open. Time till open: 3.997462511062622
+get-greeting circuit state: open. Time till open: 2.996232032775879
+get-greeting circuit state: open. Time till open: 1.995251178741455
+get-greeting circuit state: open. Time till open: 0.9939932823181152
+got error ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f47d864dba8>: Failed to establish a new connection: [Errno 111] Connection refused',))",),) - opening circuit
+get-greeting circuit state: open. Time till open: 5.999970436096191
+get-greeting circuit state: open. Time till open: 4.998587608337402
 Server is turning ON...
  * Serving Flask app "python_circuit_breaker_examples.mock_server" (lazy loading)
  * Environment: production
@@ -160,22 +160,23 @@ Server is turning ON...
    Use a production WSGI server instead.
  * Debug mode: off
  * Running on http://localhost:5000/ (Press CTRL+C to quit)
-127.0.0.1 - - [02/Dec/2019 17:10:21] "PUT /823f0eac-1550-11ea-9309-a08cfd9fd53c/823f0ead-1550-11ea-9309-a08cfd9fd53c HTTP/1.1" 200 -
-get-greeting circuit state: open. Time till open: 4.9637041091918945
-get-greeting circuit state: open. Time till open: 3.962584972381592
-get-greeting circuit state: open. Time till open: 2.9614505767822266
-get-greeting circuit state: open. Time till open: 1.9601178169250488
-get-greeting circuit state: open. Time till open: 0.9597909450531006
-127.0.0.1 - - [02/Dec/2019 17:10:26] "GET / HTTP/1.1" 200 -
-get-greeting circuit state: closed. Time till open: -0.06011533737182617
-127.0.0.1 - - [02/Dec/2019 17:10:27] "GET / HTTP/1.1" 200 -
-get-greeting circuit state: closed. Time till open: -1.0761396884918213
-127.0.0.1 - - [02/Dec/2019 17:10:28] "GET / HTTP/1.1" 200 -
-get-greeting circuit state: closed. Time till open: -2.0839052200317383
-127.0.0.1 - - [02/Dec/2019 17:10:29] "GET / HTTP/1.1" 200 -
-get-greeting circuit state: closed. Time till open: -3.1030304431915283
-127.0.0.1 - - [02/Dec/2019 17:10:30] "GET / HTTP/1.1" 200 -
-get-greeting circuit state: closed. Time till open: -4.1219072341918945
+127.0.0.1 - - [02/Dec/2019 17:18:03] "PUT /95645fa4-1551-11ea-9309-a08cfd9fd53c/95645fa5-1551-11ea-9309-a08cfd9fd53c HTTP/1.1" 200 -
+get-greeting circuit state: open. Time till open: 3.941380500793457
+get-greeting circuit state: open. Time till open: 2.940016746520996
+get-greeting circuit state: open. Time till open: 1.9387359619140625
+get-greeting circuit state: open. Time till open: 0.9375171661376953
+127.0.0.1 - - [02/Dec/2019 17:18:07] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -0.0850987434387207
+127.0.0.1 - - [02/Dec/2019 17:18:08] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -1.0990118980407715
+127.0.0.1 - - [02/Dec/2019 17:18:09] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -2.1185436248779297
+127.0.0.1 - - [02/Dec/2019 17:18:10] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -3.138019561767578
+127.0.0.1 - - [02/Dec/2019 17:18:11] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -4.158687353134155
+127.0.0.1 - - [02/Dec/2019 17:18:12] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -5.178531169891357
 ```
 
 Authors

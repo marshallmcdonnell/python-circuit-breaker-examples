@@ -5,12 +5,13 @@ from circuit import breaker
 
 from python_circuit_breaker_examples import mock_server
 
+FAILURES = 2
 TIMEOUT = 6
 
 circuit_breaker = breaker.CircuitBreakerSet(
     time.time,
     logging.getLogger('python-circuit'),
-    maxfail=3,
+    maxfail=FAILURES,
     reset_timeout=TIMEOUT)
 
 circuit_breaker.handle_error(requests.exceptions.ConnectionError)
