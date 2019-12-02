@@ -14,6 +14,7 @@ circuitbreaker = "*"
 requests = "*"
 http-server-mock = "*"
 pybreaker = "*"
+python-circuit = "*"
 
 [requires]
 python_version = "3.6"
