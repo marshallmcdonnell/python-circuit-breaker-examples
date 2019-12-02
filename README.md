@@ -29,7 +29,7 @@ Clone repository and then install using pipenv: `pipenv install --dev`
 Usage
 -----
 
-After installation, can run example of circuit breaker working via `pipenv run python python_circuit_breaker_examples/client.py`
+After installation, can run example of circuit breaker working via `pipenv run python python_circuit_breaker_examples/circuitbreaker_client.py`
 
 **Output**
 ```python
