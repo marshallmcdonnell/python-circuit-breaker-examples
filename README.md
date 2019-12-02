@@ -1,16 +1,19 @@
 | CI | License | Compatibility |
 |----|---------|---------------|
-| [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fmarshallmcdonnell%2Fcircuitbreaker-flask-example%2Fbadge%3Fref%3Dmaster&style=flat)](https://actions-badge.atrox.dev/marshallmcdonnell/circuitbreaker-flask-example/goto?ref=master) | [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) | ![python compability](.images/python-compatibility-badge.svg) |
+| [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fmarshallmcdonnell%2Fpython-circuit-breaker-examples%2Fbadge%3Fref%3Dmaster&style=flat)](https://actions-badge.atrox.dev/marshallmcdonnell/python-circuit-breaker-examples/goto?ref=master) | [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) | ![python compability](.images/python-compatibility-badge.svg) |
 
-circuitbreaker-flask-example
+python-circuit-breaker-examples
 ==========
 
-Working example of using [circuitbreaker](https://github.com/fabfuel/circuitbreaker) package
+Working example of using Python Circuit Breaker packages, such as [circuitbreaker](https://github.com/fabfuel/circuitbreaker) package,
 with a Flask mock server using [http-server-mock](https://github.com/ezequielramos/http-server-mock)
 
 The main purpose is to show how a Cicuit Breaker pattern will work
-using the [circuitbreaker](https://github.com/fabfuel/circuitbreaker) package
-on "client" calls against a REST API service on an "unreliable" mock server.
+using these packages:
+
+ * [circuitbreaker](https://github.com/fabfuel/circuitbreaker) package
+
+The "client" calls against a REST API service on an "unreliable" mock server.
 We have a mock Flask server that we can spin up or down inline
 using the [http-server-mock](https://github.com/ezequielramos/http-server-mock) package
 to control whether our client responses are successful or not
@@ -26,7 +29,7 @@ Clone repository and then install using pipenv: `pipenv install --dev`
 Usage
 -----
 
-After installation, can run example of circuit breaker working via `pipenv run python circuitbreaker_flask_example/client.py`
+After installation, can run example of circuit breaker working via `pipenv run python python_circuit_breaker_examples/client.py`
 
 **Output**
 ```python
@@ -42,7 +45,7 @@ get_greeting circuit state: open. Time till open: 0.993119
 get_greeting circuit state: open. Time till open: 5.999976
 get_greeting circuit state: open. Time till open: 4.998959
 Server is turning ON...
- * Serving Flask app "circuitbreaker_flask_example.mock_server" (lazy loading)
+ * Serving Flask app "python_circuit_breaker_examples.mock_server" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
@@ -73,5 +76,5 @@ Requirements
 Authors
 -------
 
-`circuitbreaker-flask-example` was written by [Marshall McDonnell](https://github.com/marshallmcdonnell)
+`python-circuit-breaker-examples` was written by [Marshall McDonnell](https://github.com/marshallmcdonnell)
 

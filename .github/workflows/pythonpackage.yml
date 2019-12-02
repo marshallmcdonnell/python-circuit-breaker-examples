@@ -1,4 +1,4 @@
-name: circuitbreaker-flask-example
+name: python-circuit-breaker-examples
 
 on: [push]
 

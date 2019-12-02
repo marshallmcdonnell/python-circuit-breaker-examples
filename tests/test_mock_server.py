@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-from circuitbreaker_flask_example.mock_server import app
+from python_circuit_breaker_examples.mock_server import app
 
 def test_index():
     ''' Test to ensure the mock server index page gives correct response '''

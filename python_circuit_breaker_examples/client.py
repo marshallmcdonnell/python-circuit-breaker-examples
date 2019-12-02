@@ -2,7 +2,7 @@ import requests
 import time
 from circuitbreaker import circuit, CircuitBreakerMonitor
 
-from circuitbreaker_flask_example import mock_server
+from python_circuit_breaker_examples import mock_server
 
 @circuit(failure_threshold=3, recovery_timeout=6)
 def get_greeting(url, port):

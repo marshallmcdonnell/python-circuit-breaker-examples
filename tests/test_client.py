@@ -1,6 +1,6 @@
 import pytest
 import requests
-from circuitbreaker_flask_example import client, mock_server
+from python_circuit_breaker_examples import client, mock_server
 
 url = "localhost"
 port = 5000
