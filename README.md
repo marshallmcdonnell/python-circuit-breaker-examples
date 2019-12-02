@@ -11,6 +11,7 @@ using these packages:
 
  * [circuitbreaker](https://github.com/fabfuel/circuitbreaker) package
  * [pybreaker](https://github.com/danielfm/pybreaker) package
+ * [python-circuit](https://github.com/edgeware/python-circuit) package
  
 
 The client codes calls against a "REST" API service on an "unreliable" mock server.
@@ -128,6 +129,53 @@ get_greeting circuit state: closed. Time till open: -3.039009
 get_greeting circuit state: closed. Time till open: -4.043248
 127.0.0.1 - - [02/Dec/2019 15:53:50] "GET / HTTP/1.1" 200 -
 get_greeting circuit state: closed. Time till open: -5.049541
+```
+
+## [python-circuit]()
+
+**Run**
+```
+pipenv run python python_circuit_breaker_examples/client_python_circuit.py
+```
+
+**Output**
+```
+Server is turned OFF...
+get-greeting circuit state: closed. Time till open: 6
+get-greeting circuit state: closed. Time till open: 6
+get-greeting circuit state: closed. Time till open: 6
+got error ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feeb61e2ba8>: Failed to establish a new connection: [Errno 111] Connection refused',))",),) - opening circuit
+get-greeting circuit state: open. Time till open: 5.999973773956299
+get-greeting circuit state: open. Time till open: 4.9991679191589355
+get-greeting circuit state: open. Time till open: 3.9977126121520996
+get-greeting circuit state: open. Time till open: 2.996295213699341
+get-greeting circuit state: open. Time till open: 1.9949853420257568
+get-greeting circuit state: open. Time till open: 0.9937677383422852
+got error ConnectionError(MaxRetryError("HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feeb61f3278>: Failed to establish a new connection: [Errno 111] Connection refused',))",),) - opening circuit
+get-greeting circuit state: open. Time till open: 5.999966859817505
+Server is turning ON...
+ * Serving Flask app "python_circuit_breaker_examples.mock_server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://localhost:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [02/Dec/2019 17:10:21] "PUT /823f0eac-1550-11ea-9309-a08cfd9fd53c/823f0ead-1550-11ea-9309-a08cfd9fd53c HTTP/1.1" 200 -
+get-greeting circuit state: open. Time till open: 4.9637041091918945
+get-greeting circuit state: open. Time till open: 3.962584972381592
+get-greeting circuit state: open. Time till open: 2.9614505767822266
+get-greeting circuit state: open. Time till open: 1.9601178169250488
+get-greeting circuit state: open. Time till open: 0.9597909450531006
+127.0.0.1 - - [02/Dec/2019 17:10:26] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -0.06011533737182617
+127.0.0.1 - - [02/Dec/2019 17:10:27] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -1.0761396884918213
+127.0.0.1 - - [02/Dec/2019 17:10:28] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -2.0839052200317383
+127.0.0.1 - - [02/Dec/2019 17:10:29] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -3.1030304431915283
+127.0.0.1 - - [02/Dec/2019 17:10:30] "GET / HTTP/1.1" 200 -
+get-greeting circuit state: closed. Time till open: -4.1219072341918945
 ```
 
 Authors
