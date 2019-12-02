@@ -38,7 +38,7 @@ Each have the same scenario:
  * Issue 10 API calls on 1 second delays to the endpoint till the server comes back ON
  * Issue 10 more API calls with the API service back up to show the change over to a "closed" state
 
-## circuitbreaker
+### circuitbreaker
 
 **Run**
 `pipenv run python python_circuit_breaker_examples/client_circuitbreaker.py`
@@ -82,7 +82,7 @@ get_greeting circuit state: closed. Time till open: -4.122443
 get_greeting circuit state: closed. Time till open: -5.134389
 ```
 
-## PyBreaker
+### PyBreaker
 
 **Run**
 `pipenv run python python_circuit_breaker_examples/client_pybreaker.py`
